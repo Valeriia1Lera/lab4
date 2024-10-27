@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    position: relative;
+}
+
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: none;
+    z-index: 1000;
+}
+
+header {
+    background: linear-gradient(to right, #007bff, #0056b3);
+}
+
+.card {
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 576px) {
+    .navbar {
+        position: static;
+    }
+
+    #backToTop {
+        bottom: 10px;
+        left: 10px;
+    }
+}
